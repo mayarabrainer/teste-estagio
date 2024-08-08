@@ -42,7 +42,7 @@ O projeto foi desenvolvido como parte de um teste técnico para uma oportunidade
 
 <br>
 
-### Funcionamento ?
+### Funcionamento
 
 Este Formulário permite:
 
@@ -69,7 +69,7 @@ Sendo assim, permindo o registro de fornecedores, produtos e documentos de manei
 
 <br>
 
-### Tecnologias e Ferramentas Utilizadas
+### Tecnologias/Ferramentas Utilizadas
 
 
 - **HTML**: Empregado para a estruturação do formulário.
