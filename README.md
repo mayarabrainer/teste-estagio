@@ -21,6 +21,9 @@
 
 ## Sobre o Projeto
 
+<img src="./assets/img/img-cadastro-fornecedor-produto.png"/>
+<img src="./assets/img/img-produtos-anexos.png"/>
+
 O projeto foi desenvolvido como parte de um teste técnico para uma oportunidade de estágio. O desenvolvimento seguiu um Layout já pré-existente,com um prazo de entrega de três dias. Busquei encarar o desafio sempre com muita determinação. Estou satisfeita com o resultado, considerando as limitações de tempo e experiência. 
 
 <h3> Requisitos do Projeto </h3>
