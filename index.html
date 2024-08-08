@@ -1,0 +1,186 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Fornecedor/Produto</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="./style-guide/css/fluig-style-guide.min.css" /> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Cadastro Fornecedor/Produto</h1>
+
+    <h3>Dados do Fornecedor</h3>
+    <div class="section-fornecedor">
+      <form id="form-fornecedor">
+        <div class="form">
+          <label for="razao-social">Razão Social</label>
+          <input type="text" id="razao-social" name="razao-social" required>
+        </div>
+        <div class="form">
+          <label for="cnpj">CNPJ</label>
+          <input type="text" id="cnpj" name="cnpj" required>
+        </div>
+        <div class="form">
+          <label for="nome-fantasia">Nome Fantasia</label>
+          <input type="text" id="nome-fantasia" name="nome-fantasia" required>
+        </div>
+        <div class="form">
+          <label for="inscricao-estadual">Inscrição Estadual</label>
+          <input type="text" id="inscricao-estadual" name="inscricao-estadual">
+        </div>
+        <div class="form">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+        <div class="form">
+          <label for="inscricao-municipal">Inscrição Municipal</label>
+          <input type="text" id="inscricao-municipal" name="inscricao-municipal">
+        </div>
+        <div class="form">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" disabled name="endereco">
+        </div>
+        <div class="form">
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+        <div class="form">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento">
+        </div>
+        <div class="form">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" disabled name="bairro">
+        </div>
+        <div class="form">
+          <label for="municipio">Município</label>
+          <input type="text" id="municipio" disabled name="municipio">
+        </div>
+        <div class="form">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" disabled name="estado">
+        </div>
+        <div class="form">
+          <label for="contato">Nome da Pessoa de Contato</label>
+          <input type="text" id="nome-pessoa-contato" name="nome-pessoa-contato" required>
+        </div>
+        <div class="form">
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" name="telefone" required>
+        </div>
+        <div class="form">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </form>
+    </div>
+
+    <h3>Produtos</h3>
+    <div id="section-produto" class="section-produto">
+      <div class="produtos" style="display: -webkit-box;">
+          <button id="remover-produto" class="remover-produto" style="height: 10%;  margin: 50px 0 0 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+              <path
+                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+            </svg>
+          </button>
+          <div class="section-content-produto" style="width: 95%; margin-left: 2%;">
+            <div id="container-produtos">
+              <div class="bordered-section">
+                <span class="border-text">Produto - 1</span>
+                <div class="form-produto" style="padding: 10px 50 0 0px;">
+                  <div style="display: -webkit-box; text-align: end;">
+                    <button class="btn-box" style="width: 5%;  border-radius: 50px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                      </svg>
+                    </button>
+                    <div class="form" style="display: inline;">
+                      <label for="produto">Produto</label>
+                      <input type="text" style="width: 90%;" name="produto" required>
+                    </div>
+                    <div class="form" style="display: inline;">
+                      <label for="unidade">UND. Medida</label>
+                      <select name="unidade" style="width: 15%;" required>
+                        <option value="unidade">Unidade</option>
+                        <option value="KG">Kg</option>
+                        <option value="litro">Litro</option>
+                      </select>
+
+                      <label for="quantidade">QTD. em Estoque</label>
+                      <input type="number" style="width: 5%;" name="quantidade" required>
+
+                      <label for="valor-unitario">Valor Unitário</label>
+                      <input type="number" style="width: 15%;" name="valor-unitario" step="0" required>
+
+                      <label for="valor-total">Valor Total</label>
+                      <input class="valor-total" disabled type="number" style="width: 15%; background-color: gainsboro; margin-top: 10px;" name="valor-total" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <button id="adicionar-produto" class="btn btn-primary">Adicionar Produto</button>
+    </div>
+
+    <h3>anexos</h3>
+    <div class="section-anexo">
+      <div class="section-content-anexo" style="display: inline;">
+        <div id="container-anexo">
+          <div class="bordered-section-anexo">
+            <div class="section-header">
+
+              <span class="border-text">Itens</span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="file" class="btn-adicionar-anexo" accept=".pdf, .doc, .docx, .png, .jpg, .jpeg" id="adicionar-anexo" style="margin-bottom: 10px;"/>
+        <button class="btn-adicionar-anexo" id="file-input">Incluir Anexo</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div style="width: 80%; margin-left: 10%;">
+    <button id="salvar-fornecedor">Salvar Fornecedor</button>
+  </div>
+
+  <div class="modal fade" id="jsonModal" tabindex="-1" role="dialog" aria-labelledby="jsonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-custom" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jsonModalLabel">Dados Salvos</h5>
+        </div>
+        <div class="modal-body">
+          <pre id="jsonDisplay"></pre>
+        </div>
+        <div class="modal-footer">
+          <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="./assets/js/upload.js"></script>
+  <script src="./assets/js/product.js"></script>
+  <script src="./assets/js/customer.js"></script>
+  <!-- <script src="https://style.fluig.com/js/fluig-style-guide-docs-index.min.js"></script> -->
+</body>
+
+</html>
