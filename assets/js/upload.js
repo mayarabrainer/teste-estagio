@@ -36,9 +36,7 @@ document.getElementById('file-input').addEventListener('click', function() {
             const base64 = e.target.result;
             const anexos = JSON.parse(sessionStorage.getItem('anexos')) || [];
             const indice = anexos.length ? anexos[anexos.length - 1].indice + 1 : 1;
-            // const anexo = { indice, nomeArquivo: file.name, blobArquivo: base64 };
-            //PARA NAO QUEBRAR O MODAL
-            const anexo = { indice, nomeArquivo: file.name, blobArquivo: 'baase64' };
+            const anexo = { indice, nomeArquivo: file.name, blobArquivo: base64 };
             anexos.push(anexo);
             sessionStorage.setItem('anexos', JSON.stringify(anexos));
             adicionarAnexoItem(file.name, base64, indice);
